@@ -22,25 +22,25 @@
         if((float)$excel->sheets[0]['cells'][$i][13]>0)
         {
             echo '<td>';
-            echo($excel->sheets[0]['cells'][$i][8]);
+            echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][8]));
             echo '</td>';
         }
         if((float)$excel->sheets[0]['cells'][$i][14]>0)
         {
             echo '<td>';
-            echo($excel->sheets[0]['cells'][$i][9]);
+            echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][9]));
             echo '</td>';
         }
         if((float)$excel->sheets[0]['cells'][$i][15]>0)
         {
             echo '<td>';
-            echo($excel->sheets[0]['cells'][$i][10]);
+            echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][10]));
             echo '</td>';
         }
         if((float)$excel->sheets[0]['cells'][$i][16]>0)
         {
             echo '<td>';
-            echo($excel->sheets[0]['cells'][$i][11]);
+            echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][11]));
             echo '</td>';
         }
         echo '</tr>';
