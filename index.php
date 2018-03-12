@@ -43,6 +43,12 @@
             echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][11]));
             echo '</td>';
         }
+        if((float)$excel->sheets[0]['cells'][$i][17]>0)
+        {
+            echo '<td>';
+            echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][12]));
+            echo '</td>';
+        }
         echo '</tr>';
     }
    echo '</table>';
