@@ -17,7 +17,7 @@
             echo($i);
         echo '</td>';
         echo '<td>';
-            echo($excel->sheets[0]['cells'][$i][6]);
+            echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][6]));
         echo '</td>';
         if((float)$excel->sheets[0]['cells'][$i][13]>0)
         {
