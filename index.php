@@ -20,11 +20,11 @@
             echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][2]));
         echo '</td>';
         echo '<td>';
-        /*if($excel->sheets[0]['cells'][$i][3]=="TRUE")
+        if($excel->sheets[0]['cells'][$i][3]==1)
             echo "TRUE";
-        else if($excel->sheets[0]['cells'][$i][3]=="FALSE")
+        else if($excel->sheets[0]['cells'][$i][3]==0)
             echo "FALSE";
-        else*/
+        else
             echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][3]));
         echo '</td>';
         echo '</tr>';
