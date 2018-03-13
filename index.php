@@ -10,7 +10,7 @@
     echo '<th>'; echo "S.No."; echo '</th>';
     echo '<th>'; echo "Questions"; echo '</th>';
     echo '<th>'; echo "Answers"; echo '</th>';
-    for($i=1;$i<=183;$i++)
+    for($i=1;$i<=227;$i++)
     {
         echo '<tr>';
         echo '<td>';
