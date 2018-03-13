@@ -7,7 +7,7 @@
     echo '<pre>';
     //var_export($excel->sheets);
     echo '<table border = "1">';
-    echo '<th>'; echo "Q.Id."; echo '</th>';
+    echo '<th>'; echo "S.No."; echo '</th>';
     echo '<th>'; echo "Questions"; echo '</th>';
     echo '<th>'; echo "Answers"; echo '</th>';
     for($i=1;$i<=183;$i++)
