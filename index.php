@@ -29,12 +29,12 @@
     
         <link rel="shortcut icon" href="https://cognizant.e-box.co.in/static/images/favicon.ico" type="image/x-icon">
       
-    <link rel="stylesheet" href="./Attempt Session_files/bootstrap.cognizant.min.css">
-    <link rel="stylesheet" href="./Attempt Session_files/helpGifs.css">
+    <link rel="stylesheet" href="bootstrap.cognizant.min.css">
+    <link rel="stylesheet" href="helpGifs.css">
     <link rel="stylesheet" href="https://cognizant.e-box.co.in/amphiSession/processSession">
     
      </head><body style=""><span></span>
-    <script type="text/javascript" src="./Attempt Session_files/ckeditor.js.download"></script>
+    <script type="text/javascript" src="ckeditor.js.download"></script>
 <!--[if lt IE 9]>
     <style>
         .sidePaneLink{
