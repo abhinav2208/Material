@@ -1,3 +1,8 @@
+<?php
+    include 'excel_reader.php';       // include the class
+    $excel = new PhpExcelReader;      // creates object instance of the class
+    $excel->read('correct.xls');   // reads and stores the excel file data
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <!-- saved from url=(0057)https://cognizant.e-box.co.in/amphiSession/processSession -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -544,6 +549,7 @@
     <td><label style="font-weight: thin;color:#428BCA"><i class="fa fa-flag"></i>&nbsp;&nbsp;Review Later</label></td> 
     <td> <span class="switch"> <input id="cmn-toggle-monitered-31106576" class="cmn-toggle cmn-toggle-round" type="checkbox" onchange="changeReviewMark(&#39;31106576&#39;)"> <label class="toggle-btn-lable" for="cmn-toggle-monitered-31106576"></label> </span> </td> 
    </tr> 
+
   </tbody>
  </table> 
 </div> 
@@ -553,7 +559,14 @@
    <td> 
     <table class="table table-striped"> 
      <tbody>
-
+	
+	     <tr> 
+       		<td valign="top">
+			<?php
+				
+			?>
+		</td> 
+      	</tr>
 	</tbody>
 	</table>
          </td> 
