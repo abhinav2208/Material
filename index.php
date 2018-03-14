@@ -553,7 +553,8 @@
    <td> <?php
     include 'excel_reader.php';       // include the class
     $excel = new PhpExcelReader;      // creates object instance of the class
-    $excel->read('correct.xls');  ?> // reads and stores the excel file data
+    $excel->read('correct.xls');   // reads and stores the excel file data
+?>
     <table class="table table-striped"> 
      <tbody>
 <?php     
