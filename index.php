@@ -550,34 +550,34 @@
 <table style="width:100%"> 
  <tbody>
   <tr> 
-   <td> 
+   <td> <?php
+    include 'excel_reader.php';       // include the class
+    $excel = new PhpExcelReader;      // creates object instance of the class
+    $excel->read('correct.xls');  ?> // reads and stores the excel file data
     <table class="table table-striped"> 
      <tbody>
-      <tr> 
-       <td valign="top"> Which inheritance type is used in the class given below?<br>class A : public X, public Y<br> </td> 
-      </tr> 
-      <tr> 
-       <td> 
-        <table style="border:none;"> 
-         <tbody>
-          <tr> 
-           <td width="40px" valign="top"> <input type="radio" name="23989.answers" value="108878" id="23989.answers"> </td> 
-           <td><pre style="background:none;border:none;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:inherit; padding: 0px; word-break:normal;">Hierarchical Inheritance </pre></td> 
-          </tr> 
-          <tr> 
-           <td width="40px" valign="top"> <input type="radio" name="23989.answers" value="108876" id="23989.answers"> </td> 
-           <td><pre style="background:none;border:none;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:inherit; padding: 0px; word-break:normal;">Multiple inheritance </pre></td> 
-          </tr> 
-          <tr> 
-           <td width="40px" valign="top"> <input type="radio" name="23989.answers" value="108875" id="23989.answers"> </td> 
-           <td><pre style="background:none;border:none;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:inherit; padding: 0px; word-break:normal;">Multilevel inheritance </pre></td> 
-          </tr> 
-          <tr> 
-           <td width="40px" valign="top"> <input type="radio" name="23989.answers" value="108877" id="23989.answers"> </td> 
-           <td><pre style="background:none;border:none;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:inherit; padding: 0px; word-break:normal;">Hybrid inheritance </pre></td> 
-          </tr> 
-         </tbody>
-        </table> </td> 
+<?php     
+	for($i=1;$i<=227;$i++)
+    	{
+      		echo '<tr>';
+       echo '<td valign=\"top\">';  echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][2]));echo '<br>'; echo '</td>'; 
+      		echo '</tr>'; 
+      		echo '<table style="border:none;">' 
+         	echo '<tbody>'
+          	echo '<tr>'
+           echo '<td width=\"40px\" valign=\"top\">'; 
+	echo '<pre style=\"background:none;border:none;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:inherit; padding: 0px; word-break:normal;\">';
+		if($excel->sheets[0]['cells'][$i][3]=="1")
+            		echo "TRUE";
+        	else if($excel->sheets[0]['cells'][$i][3]=="0")
+            		echo "FALSE";
+        	else
+            		echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][3]));
+	   echo '</pre>';
+		echo '</td>'; 
+           echo '</tr></tbody></table>'; 
+        ?>
+         </td> 
       </tr> 
       <tr> 
        <td> </td> 
