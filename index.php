@@ -568,6 +568,16 @@
 				echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][2]));	
 			echo '</td>'; 
       		echo '</tr>';
+		echo '<tr> <td> <table style=\"border:none;\"><tbody><tr>'; 
+           	echo '<td width=\"40px\" valign=\"top\"> <input type=\"radio\" name=\"23989.answers\" value=\"108878\" id=\"23989.answers\"> </td>'; 
+           	echo '<td><pre style=\"background:none;border:none;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:inherit; padding: 0px; word-break:normal;\">';
+			if($excel->sheets[0]['cells'][$i][3]=="1")
+            			echo "TRUE";
+        		else if($excel->sheets[0]['cells'][$i][3]=="0")
+            			echo "FALSE";
+       			else
+				echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][3])); 
+		echo '</pre> </td> </tr> </tbody> </table> </td> </tr>';
 	}
 	?>
 	</tbody>
