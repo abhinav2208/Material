@@ -550,34 +550,10 @@
 <table style="width:100%"> 
  <tbody>
   <tr> 
-   <td> <?php
-    include 'excel_reader.php';       // include the class
-    $excel = new PhpExcelReader;      // creates object instance of the class
-    $excel->read('correct.xls');   // reads and stores the excel file data
-?>
+   <td> 
     <table class="table table-striped"> 
      <tbody>
-<?php     
-	for($i=1;$i<=227;$i++)
-    	{
-      		echo '<tr>';
-       //echo '<td valign=\"top\">';  echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][2]));echo '<br>'; echo '</td>'; 
-      		echo '</tr>'; 
-      		echo '<table style="border:none;">' 
-         	echo '<tbody>'
-          	echo '<tr>'
-           echo '<td width=\"40px\" valign=\"top\">'; 
-	//echo '<pre style=\"background:none;border:none;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:inherit; padding: 0px; word-break:normal;\">';
-		if($excel->sheets[0]['cells'][$i][3]=="1")
-            		echo "TRUE";
-        	else if($excel->sheets[0]['cells'][$i][3]=="0")
-            		echo "FALSE";
-        	else
-            		echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][3]));
-	   //echo '</pre>';
-		echo '</td>'; 
-           echo '</tr>'; 
-        ?>
+
 	</tbody>
 	</table>
          </td> 
