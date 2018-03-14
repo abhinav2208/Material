@@ -565,7 +565,7 @@
 
 	     	echo '<tr>'; 
        			echo '<td valign=\"top\">';
-					
+				echo(str_replace("<", "&lt;", $excel->sheets[0]['cells'][$i][2]));	
 			echo '</td>'; 
       		echo '</tr>';
 	}
