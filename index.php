@@ -492,7 +492,7 @@
                         <div style="display:table-cell;vertical-align: top;">
                             
                             
-                                This Section  has <span class="badge" style="font-size:20px; background:#1ABC9A">30</span> pages.
+                                This Section  has <span class="badge" style="font-size:20px; background:#1ABC9A">60</span> pages.
                               
                             
                         </div>
