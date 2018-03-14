@@ -540,7 +540,7 @@
                       </h4>
                     </div>
                    </a>
-                    <div id="q23989" class="panel-collapse collapse in" style="overflow:scroll; height:275px;">
+                    <div id="q23989" class="panel-collapse collapse in" style="overflow:scroll; height:100px;">
                       <div class="panel-body">
                         <div style="float: right"> 
  <table> 
